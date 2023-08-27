@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flight Widget</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Add two clocks in the departure's div - digital & analog - and switch one into another-->
+  <div class="departures">
+
+    <header>DEPARTURES
+
+      <div class="digital-clock">
+        <div id="hours">00</div>
+        <span>:</span>
+        <div id="minutes">00</div>
+        <span>:</span>
+        <div id="seconds">00</div>
+      </div>
+
+      <div class="analog-clock">
+        <div id="seconds-hand"></div>
+        <div id="minutes-hand"></div>
+        <div id="hours-hand"></div>
+        <div id="centre"></div>
+      </div>
+
+    </header>
+
+    <table>
+
+      <thead>
+
+        <tr>
+          <th id="time">TIME</th>
+          <th id="destination">DESTINATION</th>
+          <th id="flight">FLIGHT</th>
+          <th id="gate">GATE</th>
+          <th id="remarks">REMARKS</th>
+        </tr>
+
+      </thead>
+
+      <tbody id="table-body"></tbody>
+
+    </table>
+  </div>
+
+  <script src="app.js"></script>
+
+</body>
+</html>
